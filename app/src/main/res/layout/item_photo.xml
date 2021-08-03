@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="photo"
+            type="jakub.jedrecki.ahilt.domain.model.PhotoItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightGrey">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_photo"
+                style="@style/roundedImageView"
+                thumbnailUrl="@{photo.thumbnailUrl}"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/tv_img_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toEndOf="@id/img_photo"
+                android:text="@{photo.title}"
+                tools:text="accusamus beatae ad facilis cum smilique qui sunt" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

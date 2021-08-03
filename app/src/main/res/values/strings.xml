@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SBeans</string>
+
+    <!--  login fragment  -->
+    <string name="txt_welcome">Welcome back</string>
+    <string name="txt_log_in_to_your_account">Log in to your Student Beans account</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_login">Log in</string>
+
+    <!--  login errors  -->
+    <string name="error_username_empty">Username can not be empty</string>
+    <string name="error_password_empty">Password can not be empty</string>
+
+    <!--  photos errors  -->
+    <string name="error_photos_data">Some data error etc</string>
+    <string name="error_network">Some internet error</string>
+
+</resources>
